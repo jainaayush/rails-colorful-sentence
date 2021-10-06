@@ -1,19 +1,6 @@
 </br>
 <%= @sentence.formatted_view.html_safe %>
 
-<h2>Entities</h2>
-<% @sentence.entities.each do |entity| %>
-  <p>
-    <strong>Text:</strong>
-    <%= entity.text %>
-  </p>
-
-  <p>
-    <strong>TextType:</strong>
-    <%= entity.text_type %>
-  </p>
-<% end %>
-
 <h2>Add an Entity:</h2>
 <%= form_with model: [ @sentence, @sentence.entities.build ] do |form| %>
   <p>

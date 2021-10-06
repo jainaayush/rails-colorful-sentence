@@ -1,8 +1,8 @@
 </br>
-<div style="text-align:right;padding: 6px 44px 6px 6px;">
+<h1>Sentences</h1>
+<div class="new_sentence">
   <%= button_to "New Sentence", new_sentence_path, :method => :get %>
 </div>
-
 <ul>
   <% @sentences.each do |sentence| %>
     <li><%= sentence.formatted_view.html_safe %></li></br>
